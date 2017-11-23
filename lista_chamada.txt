@@ -1,0 +1,2 @@
+SELECT rd.ra,ac.nome,rd.id_doc_disc,rd.creditos,dd.disciplina,dd.docente FROM ra_disc rd
+inner join doc_disc dd on dd.id_doc_disc=rd.id_doc_disc inner join aluno_cad ac on rd.ra = ac.ra where rd.id_doc_disc = '14'and rd.data like '%/12/2006%'order by rd.id_doc_disc,rd.ra asc LIMIT 0,1000
